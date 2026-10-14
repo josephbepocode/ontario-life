@@ -1,0 +1,12 @@
+{
+  "name": "Ontario Life",
+  "short_name": "Ontario Life",
+  "description": "A Sims-style life sim across Ontario, from Ottawa to Kitchener-Waterloo.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b3a6b",
+  "theme_color": "#0b3a6b",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

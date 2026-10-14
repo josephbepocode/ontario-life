@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b3a6b">
+  <title>Ontario Life</title>
+  <meta name="description" content="A Sims-style life sim across Ontario: Ottawa to Kitchener-Waterloo. Ride GO and VIA, survive the 401, pay rent on the 1st.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header id="hud" aria-live="off"></header>
+    <div id="ticker" role="status" aria-live="polite">Welcome home to Oshawa.</div>
+    <main id="view"></main>
+    <nav id="tabs" aria-label="Sections">
+      <button data-tab="map"><span>🗺️</span>Map</button>
+      <button data-tab="here"><span>📍</span>Here</button>
+      <button data-tab="friends"><span>👥</span>Friends</button>
+      <button data-tab="goals"><span>🎯</span>Goals</button>
+      <button data-tab="online" class="tab-online"><span>🌐</span>Online<i class="tbadge" id="net-badge" hidden></i></button>
+      <button data-tab="menu"><span>☰</span>Menu</button>
+    </nav>
+  </div>
+  <div id="modal" hidden></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>Ontario Life needs JavaScript to run.</noscript>
+  <script src="data.js"></script>
+  <script src="net.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
